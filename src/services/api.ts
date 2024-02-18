@@ -1,5 +1,10 @@
 import axios from "axios";
 
-export function setupAPIClient (context = undefined){
+export const api = axios.create({
+    baseURL: ''
+})
+
+
+api.interceptors.response.use((config)=>{
     
-}
+})
